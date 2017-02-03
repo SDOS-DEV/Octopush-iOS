@@ -1,0 +1,6 @@
+framework module OctopushServiceExtension {
+  umbrella header "OctopushServiceExtension.h"
+
+  export *
+  module * { export * }
+}

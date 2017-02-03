@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO" initialViewController="ZnA-8v-rkY">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+    </dependencies>
+    <scenes>
+        <!--Octopush View Controller-->
+        <scene sceneID="MUl-QF-mMM">
+            <objects>
+                <viewController id="ZnA-8v-rkY" customClass="OctopushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="My7-wf-jnJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="blX-ch-Cap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5cg-Nn-ZGt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWQ-P6-20b">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bienvenido a Octopush" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdq-a8-zVF">
+                                        <rect key="frame" x="10" y="20" width="580" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pruebe el envío de notificaciones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lt-L4-69b">
+                                        <rect key="frame" x="20" y="536" width="560" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKY-tM-vR9">
+                                        <rect key="frame" x="20" y="106" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Obtener mensaje rich por id">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressButtonMensajePorId:" destination="ZnA-8v-rkY" eventType="touchUpInside" id="mRH-6K-J0a"/>
+                                        </connections>
+                                    </button>
+                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identificador de la rich" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-Yh-Gex">
+                                        <rect key="frame" x="20" y="66" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKb-jS-D7t">
+                                        <rect key="frame" x="49" y="216" width="477" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Cambiar estado de mensaje">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressButtonCambiarEstado:" destination="ZnA-8v-rkY" eventType="touchUpInside" id="cxc-lK-Tsc"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGL-qM-COc">
+                                        <rect key="frame" x="20" y="286" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Obtener lista mensajes rich por id">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressButtonListaDeMensajes:" destination="ZnA-8v-rkY" eventType="touchUpInside" id="7nK-hE-Agl"/>
+                                        </connections>
+                                    </button>
+                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identificador del mensaje rich" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eVW-xh-yB6">
+                                        <rect key="frame" x="20" y="176" width="210" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="210" id="o4N-Pp-He5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WR9-Ez-emr">
+                                        <rect key="frame" x="240" y="176" width="51" height="31"/>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFK-Gu-sbc">
+                                        <rect key="frame" x="20" y="333" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Desregistrar dispositivo">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressButtonDesregistrar:" destination="ZnA-8v-rkY" eventType="touchUpInside" id="VbR-MM-yRU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eKY-tM-vR9" secondAttribute="trailing" constant="20" id="7J2-nx-th6"/>
+                                    <constraint firstItem="MGL-qM-COc" firstAttribute="leading" secondItem="oWQ-P6-20b" secondAttribute="leading" constant="20" id="7ll-Cb-4X9"/>
+                                    <constraint firstItem="eVW-xh-yB6" firstAttribute="leading" secondItem="oWQ-P6-20b" secondAttribute="leading" constant="20" id="7xU-Qe-VDG"/>
+                                    <constraint firstItem="TFK-Gu-sbc" firstAttribute="leading" secondItem="oWQ-P6-20b" secondAttribute="leading" constant="20" id="DNQ-GG-Kr4"/>
+                                    <constraint firstItem="MGL-qM-COc" firstAttribute="top" secondItem="qKb-jS-D7t" secondAttribute="bottom" priority="250" constant="40" id="Hhy-4P-fzT"/>
+                                    <constraint firstItem="jdq-a8-zVF" firstAttribute="leading" secondItem="oWQ-P6-20b" secondAttribute="leading" constant="10" id="HlS-W9-POt"/>
+                                    <constraint firstAttribute="trailing" secondItem="MGL-qM-COc" secondAttribute="trailing" constant="20" id="I7C-s5-w05"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WR9-Ez-emr" secondAttribute="trailing" constant="20" id="LD7-7N-LQl"/>
+                                    <constraint firstAttribute="trailing" secondItem="qsc-Yh-Gex" secondAttribute="trailing" constant="20" id="Nnc-GR-Y0S"/>
+                                    <constraint firstAttribute="bottom" secondItem="2lt-L4-69b" secondAttribute="bottom" constant="20" id="Qmv-vS-jrs"/>
+                                    <constraint firstItem="eVW-xh-yB6" firstAttribute="top" secondItem="eKY-tM-vR9" secondAttribute="bottom" constant="40" id="UZy-KJ-Xo4"/>
+                                    <constraint firstAttribute="trailing" secondItem="2lt-L4-69b" secondAttribute="trailing" constant="20" id="XkI-Xx-YTT"/>
+                                    <constraint firstItem="TFK-Gu-sbc" firstAttribute="top" secondItem="MGL-qM-COc" secondAttribute="bottom" constant="17" id="ZsI-bj-g2y"/>
+                                    <constraint firstItem="qKb-jS-D7t" firstAttribute="top" secondItem="eVW-xh-yB6" secondAttribute="bottom" constant="10" id="aPU-7D-ndD"/>
+                                    <constraint firstItem="qsc-Yh-Gex" firstAttribute="leading" secondItem="oWQ-P6-20b" secondAttribute="leading" constant="20" id="aqM-ms-0zF"/>
+                                    <constraint firstAttribute="trailing" secondItem="TFK-Gu-sbc" secondAttribute="trailing" constant="20" id="djd-eb-Hrj"/>
+                                    <constraint firstItem="2lt-L4-69b" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TFK-Gu-sbc" secondAttribute="bottom" constant="20" id="e6p-Rw-gDw"/>
+                                    <constraint firstItem="qsc-Yh-Gex" firstAttribute="top" secondItem="jdq-a8-zVF" secondAttribute="bottom" constant="10" id="g3H-hl-gHh"/>
+                                    <constraint firstItem="WR9-Ez-emr" firstAttribute="leading" secondItem="eVW-xh-yB6" secondAttribute="trailing" constant="10" id="g6A-TX-8CB"/>
+                                    <constraint firstItem="WR9-Ez-emr" firstAttribute="centerY" secondItem="eVW-xh-yB6" secondAttribute="centerY" id="hia-Hf-VSY"/>
+                                    <constraint firstAttribute="trailing" secondItem="qKb-jS-D7t" secondAttribute="trailing" constant="74" id="hlq-fz-b4N"/>
+                                    <constraint firstItem="eKY-tM-vR9" firstAttribute="leading" secondItem="oWQ-P6-20b" secondAttribute="leading" constant="20" id="ih0-OS-qdV"/>
+                                    <constraint firstItem="2lt-L4-69b" firstAttribute="leading" secondItem="oWQ-P6-20b" secondAttribute="leading" constant="20" id="k1J-ol-F8P"/>
+                                    <constraint firstItem="qKb-jS-D7t" firstAttribute="leading" secondItem="oWQ-P6-20b" secondAttribute="leading" constant="49" id="qbU-D0-EIi"/>
+                                    <constraint firstItem="jdq-a8-zVF" firstAttribute="top" secondItem="oWQ-P6-20b" secondAttribute="top" constant="20" id="uLN-PP-tLD"/>
+                                    <constraint firstAttribute="trailing" secondItem="jdq-a8-zVF" secondAttribute="trailing" constant="10" id="ytC-gF-pV4"/>
+                                    <constraint firstItem="eKY-tM-vR9" firstAttribute="top" secondItem="qsc-Yh-Gex" secondAttribute="bottom" constant="10" id="yxR-Yq-5UT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oWQ-P6-20b" firstAttribute="top" secondItem="My7-wf-jnJ" secondAttribute="bottom" id="IWB-K6-2rJ"/>
+                            <constraint firstAttribute="trailing" secondItem="oWQ-P6-20b" secondAttribute="trailing" id="ku0-dJ-QjE"/>
+                            <constraint firstItem="blX-ch-Cap" firstAttribute="top" secondItem="oWQ-P6-20b" secondAttribute="bottom" id="tdm-4f-Ptu"/>
+                            <constraint firstItem="oWQ-P6-20b" firstAttribute="leading" secondItem="5cg-Nn-ZGt" secondAttribute="leading" id="yUy-e8-gzH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sw" destination="WR9-Ez-emr" id="ebf-D8-4om"/>
+                        <outlet property="tfIdMensaje1" destination="qsc-Yh-Gex" id="1Kc-9H-3tH"/>
+                        <outlet property="tfIdMensaje2" destination="eVW-xh-yB6" id="O2K-Ff-YRo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bay-87-oqZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613" y="429"/>
+        </scene>
+    </scenes>
+</document>

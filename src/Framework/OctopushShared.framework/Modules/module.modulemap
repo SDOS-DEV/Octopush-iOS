@@ -1,0 +1,6 @@
+framework module OctopushShared {
+  umbrella header "OctopushShared.h"
+
+  export *
+  module * { export * }
+}

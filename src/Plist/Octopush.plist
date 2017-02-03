@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APP_DEVELOPER_PRE_PRODUCTION_OR_PRODUCTION</key>
+	<integer>0</integer>
+	<key>DEVELOPMENT_SERVER</key>
+	<string>https://test.octopush.me/octopus-rs</string>
+	<key>DEVELOPMENT_APP_KEY</key>
+	<string></string>
+	<key>PRE_PRODUCTION_SERVER</key>
+	<string>https://test.octopush.me/octopus-rs</string>
+	<key>PRE_PRODUCTION_APP_KEY</key>
+	<string></string>
+	<key>PRODUCTION_SERVER</key>
+	<string>https://octopush.me/octopus-rs</string>
+	<key>PRODUCTION_APP_KEY</key>
+	<string></string>
+</dict>
+</plist>

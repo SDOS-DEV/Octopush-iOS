@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		548D442D1E0BBD0000F0A061 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 548D442C1E0BBD0000F0A061 /* NotificationService.m */; };
+		54EFEC651E290AF700C8985A /* OctopushConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EFEC631E29040F00C8985A /* OctopushConfiguration.m */; };
+		7D257EFD1DE5D952004EF8D4 /* MALoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6B14E1DC7631200D3D697 /* MALoggingViewController.m */; };
+		7D257F0B1DE5D952004EF8D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 290A16A41BFB3146002361EF /* AppDelegate.m */; };
+		7D257F121DE5D952004EF8D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 298FD5BB1C0701E500BA707E /* main.m */; };
+		7D257F1F1DE5D952004EF8D4 /* OctopushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6B1481DC7622A00D3D697 /* OctopushViewController.m */; };
+		7D257F2A1DE5D952004EF8D4 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5B71C0701E500BA707E /* AppIcon.xcassets */; };
+		7D257F2D1DE5D952004EF8D4 /* Launcher.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5BA1C0701E500BA707E /* Launcher.xcassets */; };
+		7D257F2F1DE5D952004EF8D4 /* App.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5BD1C0701E500BA707E /* App.debug.xcconfig */; };
+		7D257F321DE5D952004EF8D4 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5C01C0701E500BA707E /* Shared.xcconfig */; };
+		7D257F331DE5D952004EF8D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D6B14A1DC7626C00D3D697 /* Main.storyboard */; };
+		7D257F361DE5D952004EF8D4 /* App.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5BE1C0701E500BA707E /* App.release.xcconfig */; };
+		B105DFBB1E437F54009613C7 /* Octopush.plist in Resources */ = {isa = PBXBuildFile; fileRef = B105DFBA1E437F54009613C7 /* Octopush.plist */; };
+		B1C513CD1E2E33AD0073F27F /* OctopushExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 548D44291E0BBCFF00F0A061 /* OctopushExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1B675DE1E2E1C4E006E8C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2970AD6D1BFA153F007CFBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 548D44281E0BBCFF00F0A061;
+			remoteInfo = OctopushExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7D257F3E1DE5D952004EF8D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C513C71E2E33910073F27F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B1C513CD1E2E33AD0073F27F /* OctopushExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17EFE1856AE679994C7C312D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290A16A31BFB3146002361EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		290A16A41BFB3146002361EF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		298FD5B71C0701E500BA707E /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		298FD5BA1C0701E500BA707E /* Launcher.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Launcher.xcassets; sourceTree = "<group>"; };
+		298FD5BB1C0701E500BA707E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		298FD5BD1C0701E500BA707E /* App.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = App.debug.xcconfig; sourceTree = "<group>"; };
+		298FD5BE1C0701E500BA707E /* App.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = App.release.xcconfig; sourceTree = "<group>"; };
+		298FD5C01C0701E500BA707E /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		298FD6351C0701E500BA707E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		542512111E29149C009AEE27 /* OctopushSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OctopushSource.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/OctopushSource-anewlooezvhawrapjcvtsamvmbrh/Build/Products/Debug-iphonesimulator/OctopushSource/OctopushSource.framework"; sourceTree = "<group>"; };
+		548D44291E0BBCFF00F0A061 /* OctopushExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OctopushExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		548D442B1E0BBD0000F0A061 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		548D442C1E0BBD0000F0A061 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		548D442E1E0BBD0000F0A061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54EFEC621E29040F00C8985A /* OctopushConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctopushConfiguration.h; sourceTree = "<group>"; };
+		54EFEC631E29040F00C8985A /* OctopushConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctopushConfiguration.m; sourceTree = "<group>"; };
+		7D257E1C1DE5CC05004EF8D4 /* OctopushSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OctopushSource.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Octopush-cvhuyxgcmixiyndocaedgxhgjwgl/Build/Products/Debug-iphoneos/OctopushSource/OctopushSource.framework"; sourceTree = "<group>"; };
+		7D257EEA1DE5D549004EF8D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D257EEC1DE5D54F004EF8D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D257EEE1DE5D56C004EF8D4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7D257EF01DE5D578004EF8D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7D257EF21DE5D582004EF8D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7D257EF41DE5D58D004EF8D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D257F441DE5D952004EF8D4 /* Octopush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octopush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D257F471DE60D94004EF8D4 /* Octopush-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Octopush-Info.plist"; sourceTree = "<group>"; };
+		B105DFBA1E437F54009613C7 /* Octopush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Octopush.plist; sourceTree = "<group>"; };
+		B1B675E71E2E1FE6006E8C0F /* OctopushDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OctopushDebug.entitlements; sourceTree = "<group>"; };
+		B1B675E81E2E1FE6006E8C0F /* OctopushProduction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OctopushProduction.entitlements; sourceTree = "<group>"; };
+		B1D6B1471DC7622A00D3D697 /* OctopushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctopushViewController.h; sourceTree = "<group>"; };
+		B1D6B1481DC7622A00D3D697 /* OctopushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctopushViewController.m; sourceTree = "<group>"; };
+		B1D6B14A1DC7626C00D3D697 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B1D6B14D1DC7631200D3D697 /* MALoggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALoggingViewController.h; sourceTree = "<group>"; };
+		B1D6B14E1DC7631200D3D697 /* MALoggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MALoggingViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		548D44261E0BBCFF00F0A061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D257F241DE5D952004EF8D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3F2B7365F64DEDC650C528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542512111E29149C009AEE27 /* OctopushSource.framework */,
+				7D257EF41DE5D58D004EF8D4 /* CoreGraphics.framework */,
+				7D257EF21DE5D582004EF8D4 /* SystemConfiguration.framework */,
+				7D257EF01DE5D578004EF8D4 /* AudioToolbox.framework */,
+				7D257EEE1DE5D56C004EF8D4 /* Security.framework */,
+				7D257EEC1DE5D54F004EF8D4 /* Foundation.framework */,
+				7D257EEA1DE5D549004EF8D4 /* UIKit.framework */,
+				7D257E1C1DE5CC05004EF8D4 /* OctopushSource.framework */,
+				17EFE1856AE679994C7C312D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		290A16A21BFB3146002361EF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				290A16A31BFB3146002361EF /* AppDelegate.h */,
+				290A16A41BFB3146002361EF /* AppDelegate.m */,
+				298FD5B61C0701E500BA707E /* Configuration */,
+				298FD5C61C0701E500BA707E /* Controllers */,
+				298FD6241C0701E500BA707E /* Others */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2970AD6C1BFA153F007CFBD9 = {
+			isa = PBXGroup;
+			children = (
+				290A16A21BFB3146002361EF /* App */,
+				548D442A1E0BBD0000F0A061 /* OctopushExtension */,
+				2970AD761BFA153F007CFBD9 /* Products */,
+				1A3F2B7365F64DEDC650C528 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2970AD761BFA153F007CFBD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D257F441DE5D952004EF8D4 /* Octopush.app */,
+				548D44291E0BBCFF00F0A061 /* OctopushExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		298FD5B61C0701E500BA707E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B1B675E61E2E1FE6006E8C0F /* Entitlements */,
+				54EFEC611E29036400C8985A /* Octopush */,
+				298FD5BB1C0701E500BA707E /* main.m */,
+				7D257F471DE60D94004EF8D4 /* Octopush-Info.plist */,
+				298FD5B71C0701E500BA707E /* AppIcon.xcassets */,
+				298FD5BA1C0701E500BA707E /* Launcher.xcassets */,
+				298FD5BC1C0701E500BA707E /* Profiles */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		298FD5BC1C0701E500BA707E /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				298FD5BD1C0701E500BA707E /* App.debug.xcconfig */,
+				298FD5BE1C0701E500BA707E /* App.release.xcconfig */,
+				298FD5C01C0701E500BA707E /* Shared.xcconfig */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		298FD5C61C0701E500BA707E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				298FD5C71C0701E500BA707E /* Controllers */,
+				298FD5CD1C0701E500BA707E /* Storyboards */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		298FD5C71C0701E500BA707E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1D6B1471DC7622A00D3D697 /* OctopushViewController.h */,
+				B1D6B1481DC7622A00D3D697 /* OctopushViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		298FD5CD1C0701E500BA707E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B1D6B14A1DC7626C00D3D697 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		298FD6241C0701E500BA707E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				298FD6321C0701E500BA707E /* Libs */,
+				298FD6331C0701E500BA707E /* Localization */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		298FD6321C0701E500BA707E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				B1D6B14C1DC7631200D3D697 /* LogView */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		298FD6331C0701E500BA707E /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				298FD6341C0701E500BA707E /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		548D442A1E0BBD0000F0A061 /* OctopushExtension */ = {
+			isa = PBXGroup;
+			children = (
+				548D442B1E0BBD0000F0A061 /* NotificationService.h */,
+				548D442C1E0BBD0000F0A061 /* NotificationService.m */,
+				548D442E1E0BBD0000F0A061 /* Info.plist */,
+			);
+			path = OctopushExtension;
+			sourceTree = "<group>";
+		};
+		54EFEC611E29036400C8985A /* Octopush */ = {
+			isa = PBXGroup;
+			children = (
+				B105DFBA1E437F54009613C7 /* Octopush.plist */,
+				54EFEC621E29040F00C8985A /* OctopushConfiguration.h */,
+				54EFEC631E29040F00C8985A /* OctopushConfiguration.m */,
+			);
+			path = Octopush;
+			sourceTree = "<group>";
+		};
+		B1B675E61E2E1FE6006E8C0F /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				B1B675E71E2E1FE6006E8C0F /* OctopushDebug.entitlements */,
+				B1B675E81E2E1FE6006E8C0F /* OctopushProduction.entitlements */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+		B1D6B14C1DC7631200D3D697 /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				B1D6B14D1DC7631200D3D697 /* MALoggingViewController.h */,
+				B1D6B14E1DC7631200D3D697 /* MALoggingViewController.m */,
+			);
+			path = LogView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		548D44281E0BBCFF00F0A061 /* OctopushExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 548D44351E0BBD0000F0A061 /* Build configuration list for PBXNativeTarget "OctopushExtension" */;
+			buildPhases = (
+				548D44251E0BBCFF00F0A061 /* Sources */,
+				548D44261E0BBCFF00F0A061 /* Frameworks */,
+				548D44271E0BBCFF00F0A061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OctopushExtension;
+			productName = OctopushExtension;
+			productReference = 548D44291E0BBCFF00F0A061 /* OctopushExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7D257EF81DE5D952004EF8D4 /* Octopush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D257F401DE5D952004EF8D4 /* Build configuration list for PBXNativeTarget "Octopush" */;
+			buildPhases = (
+				7D257EFC1DE5D952004EF8D4 /* Sources */,
+				7D257F241DE5D952004EF8D4 /* Frameworks */,
+				7D257F271DE5D952004EF8D4 /* Resources */,
+				7D257F3B1DE5D952004EF8D4 /* Warnings */,
+				7D257F3E1DE5D952004EF8D4 /* Embed Frameworks */,
+				B1C513C71E2E33910073F27F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1B675DF1E2E1C4E006E8C0F /* PBXTargetDependency */,
+			);
+			name = Octopush;
+			productName = BaseProject;
+			productReference = 7D257F441DE5D952004EF8D4 /* Octopush.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2970AD6D1BFA153F007CFBD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = SDOS;
+				TargetAttributes = {
+					548D44281E0BBCFF00F0A061 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FR53QH8ZBJ;
+						ProvisioningStyle = Manual;
+					};
+					7D257EF81DE5D952004EF8D4 = {
+						DevelopmentTeam = FR53QH8ZBJ;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2970AD701BFA153F007CFBD9 /* Build configuration list for PBXProject "Octopush" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = 2970AD6C1BFA153F007CFBD9;
+			productRefGroup = 2970AD761BFA153F007CFBD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D257EF81DE5D952004EF8D4 /* Octopush */,
+				548D44281E0BBCFF00F0A061 /* OctopushExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		548D44271E0BBCFF00F0A061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D257F271DE5D952004EF8D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D257F2A1DE5D952004EF8D4 /* AppIcon.xcassets in Resources */,
+				7D257F2D1DE5D952004EF8D4 /* Launcher.xcassets in Resources */,
+				7D257F2F1DE5D952004EF8D4 /* App.debug.xcconfig in Resources */,
+				7D257F321DE5D952004EF8D4 /* Shared.xcconfig in Resources */,
+				7D257F331DE5D952004EF8D4 /* Main.storyboard in Resources */,
+				7D257F361DE5D952004EF8D4 /* App.release.xcconfig in Resources */,
+				B105DFBB1E437F54009613C7 /* Octopush.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D257F3B1DE5D952004EF8D4 /* Warnings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Warnings;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}/App\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		548D44251E0BBCFF00F0A061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548D442D1E0BBD0000F0A061 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D257EFC1DE5D952004EF8D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D257EFD1DE5D952004EF8D4 /* MALoggingViewController.m in Sources */,
+				7D257F0B1DE5D952004EF8D4 /* AppDelegate.m in Sources */,
+				7D257F121DE5D952004EF8D4 /* main.m in Sources */,
+				54EFEC651E290AF700C8985A /* OctopushConfiguration.m in Sources */,
+				7D257F1F1DE5D952004EF8D4 /* OctopushViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1B675DF1E2E1C4E006E8C0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 548D44281E0BBCFF00F0A061 /* OctopushExtension */;
+			targetProxy = B1B675DE1E2E1C4E006E8C0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		298FD6341C0701E500BA707E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				298FD6351C0701E500BA707E /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2970AD8D1BFA153F007CFBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298FD5BD1C0701E500BA707E /* App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_ASSETS)";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "$(LAUNCHER_ASSETS)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2970AD8E1BFA153F007CFBD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298FD5BE1C0701E500BA707E /* App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_ASSETS)";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "$(LAUNCHER_ASSETS)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"PREPRODUCTION=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		548D44321E0BBD0000F0A061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = FR53QH8ZBJ;
+				INFOPLIST_FILE = OctopushExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$PRODUCT_PACKAGE_NAME_EXTENSION";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8a89fcc1-fc38-4b06-bfe2-7551d64c7f2e";
+				PROVISIONING_PROFILE_SPECIFIER = Desarrollo;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		548D44331E0BBD0000F0A061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = OctopushExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "$PRODUCT_PACKAGE_NAME_EXTENSION";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ad6f008b-69ed-4712-8fdf-e2b71ee266c9";
+				PROVISIONING_PROFILE_SPECIFIER = es.sdos.octopush.test.extension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D257F411DE5D952004EF8D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_ASSETS)";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "$(LAUNCHER_ASSETS)";
+				CODE_SIGN_ENTITLEMENTS = App/Configuration/Entitlements/OctopushDebug.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FR53QH8ZBJ;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "App/Configuration/Octopush-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_PACKAGE_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1637854d-7061-4f10-955b-767c876fba58";
+				PROVISIONING_PROFILE_SPECIFIER = es.sdos.octopush.dev;
+			};
+			name = Debug;
+		};
+		7D257F421DE5D952004EF8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_ASSETS)";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "$(LAUNCHER_ASSETS)";
+				CODE_SIGN_ENTITLEMENTS = App/Configuration/Entitlements/OctopushProduction.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "App/Configuration/Octopush-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_PACKAGE_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1fb3a210-6635-43d6-868b-5a9569f16029";
+				PROVISIONING_PROFILE_SPECIFIER = es.sdos.octopush.test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2970AD701BFA153F007CFBD9 /* Build configuration list for PBXProject "Octopush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2970AD8D1BFA153F007CFBD9 /* Debug */,
+				2970AD8E1BFA153F007CFBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		548D44351E0BBD0000F0A061 /* Build configuration list for PBXNativeTarget "OctopushExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548D44321E0BBD0000F0A061 /* Debug */,
+				548D44331E0BBD0000F0A061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D257F401DE5D952004EF8D4 /* Build configuration list for PBXNativeTarget "Octopush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D257F411DE5D952004EF8D4 /* Debug */,
+				7D257F421DE5D952004EF8D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2970AD6D1BFA153F007CFBD9 /* Project object */;
+}

@@ -1,0 +1,16 @@
+source 'http://git.sdos.es/ios/cocoapods-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+inhibit_all_warnings!
+use_frameworks!
+
+target 'Octopush' do
+    pod 'Octopush', :path => '../'
+    pod 'OctopushShared', :path => '../'
+end
+
+target 'OctopushExtension' do
+    pod 'OctopushServiceExtension', :path => '../'
+    pod 'OctopushShared', :path => '../'
+end

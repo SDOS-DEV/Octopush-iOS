@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DEVELOPMENT_SERVER</key>
+	<string>http://192.168.1.89:8080/octopush-rs</string>
+	<key>DEVELOPMENT_APP_KEY</key>
+	<string>f538d9471ffd41baa0c3cdad832af2ac</string>
+	<key>PRE_PRODUCTION_SERVER</key>
+	<string>http://192.168.1.89:8080/octopush-rs</string>
+	<key>PRE_PRODUCTION_APP_KEY</key>
+	<string>f538d9471ffd41baa0c3cdad832af2ac</string>
+	<key>PRODUCTION_SERVER</key>
+	<string>http://192.168.1.89:8080/octopush-rs</string>
+	<key>PRODUCTION_APP_KEY</key>
+	<string>f538d9471ffd41baa0c3cdad832af2ac</string>
+	<key>APP_DEVELOPER_PRE_PRODUCTION_OR_PRODUCTION</key>
+	<integer>0</integer>
+</dict>
+</plist>
