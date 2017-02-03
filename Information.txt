@@ -1,0 +1,3 @@
+El contenido de esta carpeta se genera automáticamente a través de un script. Los siguientes archivos no son autogenerados:
+- Octopush (Carpeta)
+- README.md
