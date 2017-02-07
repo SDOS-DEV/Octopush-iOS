@@ -1,4 +1,4 @@
-@version = "4.0.0"
+@version = "4.0.1"
 Pod::Spec.new do |spec|
   spec.platform     = :ios, '8.0'
   spec.name         = 'OctopushServiceExtension'
