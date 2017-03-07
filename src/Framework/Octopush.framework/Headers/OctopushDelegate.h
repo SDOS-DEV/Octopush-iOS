@@ -73,6 +73,8 @@ typedef NS_ENUM(NSUInteger, OctopushSilentResultType) {
 
 @protocol OctopushNotificationDelegate <NSObject>
 
+@optional
+
 #pragma mark - Register notifications
 
 /**

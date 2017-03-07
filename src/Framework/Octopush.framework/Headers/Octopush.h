@@ -16,6 +16,10 @@
 #import "OctopushSegmentsController.h"
 #import "OctopushDelegate.h"
 #import "OctopushAction.h"
+#import "UNNotificationContent+Octopush.h"
+#if __has_include("OctopushFramework.h")
+#import "OctopushFramework.h"
+#endif
 
 @class OctopushNotification;
 
