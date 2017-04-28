@@ -49,6 +49,13 @@ typedef void (^OctopushMessageSuccessBlock)(OctopushMensajeRich *mensajeRich);
  *
  *  @param success Objeto de tipo MensajeRich que devuelve la ejecución del método
  */
+typedef void (^OctopushLastDateSuccessBlock)(NSDate *date);
+
+/**
+ *  Bloque de ejecución con una salida correcta
+ *
+ *  @param success Objeto de tipo MensajeRich que devuelve la ejecución del método
+ */
 typedef void (^OctopushSuccessBlock)(BOOL success);
 
 /**
@@ -264,6 +271,15 @@ typedef void (^OctopushFailureBlock)(NSError *error);
  *  @param failure Bloque que se ejecuta para una salida incorrecta del método. Contiene el error devuelto por el método.
  */
 + (void) setRichPush:(NSString *) idRich markAsRead:(BOOL) markAsRead success:(OctopushSuccessBlock) success failure:(OctopushFailureBlock) failure;
+
+
+/**
+ *  Método encargado de modificar el estado de un mensaje rich.
+ *
+ *  @param success Bloque que se ejecuta para una salida correcta del método. Contiene el objeto de la fecha devuelta.
+ *  @param failure Bloque que se ejecuta para una salida incorrecta del método. Contiene el error devuelto por el método.
+ */
++ (void) getLastDateRichPublicationWithSuccess:(OctopushLastDateSuccessBlock) success failure:(OctopushFailureBlock) failure;
 
 #pragma mark - Segments
 
