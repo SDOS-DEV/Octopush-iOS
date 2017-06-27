@@ -1,0 +1,39 @@
+/* 
+  localizable.strings
+  Octopush
+
+  Created by Rafael Fernandez Alvarez on 26/06/2017.
+  Copyright © 2017 SDOS. All rights reserved.
+*/
+
+"comun_cerrar" = "Cerrar";
+"comun_informacion" = "Información";
+"comun_error" = "Error";
+"comun_guardar" = "Guardar";
+"comun_accion_no_tratada" = "Ación sin tratamiento especial";
+
+"combo_selecciona_opcion" = "Selecciona una opción";
+"combo_si" = "Sí";
+"combo_no" = "No";
+"combo_borrar" = "Borrar";
+"combo_cancelar" = "Cancelar";
+"combo_seleccionar_fecha" = "Seleccionar fecha";
+"combo_selecciona_valor" = "Seleccione un valor";
+
+"dashboard_notificaciones" = "NOTIFICACIONES";
+"dashboard_usuario" = "USUARIO";
+"dashboard_placeholder_usuario" = "Escribe un usuario";
+"dashboard_activar" = "Activar";
+"dashboard_desactivar" = "Desactivar";
+"dashboard_info_usuario" = "El usuario servirá para poder registrarlo en octopush al pulsar el botón Activar";
+"dashboard_registro_localizacion" = "Registro de localización";
+"dashboard_segmentos" = "Segmentos";
+"dashboard_notificaciones_tich" = "Notificaciones rich";
+
+"notification_unregister_correct" = "Dispositivo desregistrado correctamente";
+"notification_unregister_incorrect" = "Fallo al desregistrar: %@";
+"notification_register_incorrect" = "Fallo en el registro: %@";
+"notification_register_correct" = "Registro realizado correctamente";
+"notification_location_correct" = "Localización registrada correctamente";
+"notification_location_incorrect" = "Fallo al registrar la localización: %@";
+"notification_" = "";

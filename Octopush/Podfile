@@ -7,6 +7,9 @@ use_frameworks!
 target 'Octopush' do
     pod 'Octopush', :path => '../'
     pod 'OctopushShared', :path => '../'
+    pod 'IQKeyboardManager'
+    pod 'FLEX'
+    pod 'IQActionSheetPickerView'
 end
 
 target 'OctopushExtension' do

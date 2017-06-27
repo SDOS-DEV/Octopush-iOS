@@ -150,4 +150,21 @@ typedef NS_ENUM(NSUInteger, OctopushSilentResultType) {
  */
 - (void) octopush:(Octopush *) octopush handleActionFromNotification:(OctopushNotification *) octopushNotification withCompletionHandler:(void (^)())completionHandler;
 
+#pragma mark - Register Location
+
+/**
+ *  Método que se llama al registrar la localización del dispositivo de Octopush.
+ *
+ *  @param octopush Clase Octopush.
+ */
+- (void) didRegisterLocationFromOctopush:(Octopush *) octopush;
+
+/**
+ *  Método que se llama al fallar al registrar la localización del dispositivo de Octopush.
+ *
+ *  @param octopush Clase Octopush.
+ *  @param error    Descripción del error. Los errores pueden tomar los valores definidos en la clase "CLError.h" asociada a la localización
+ */
+- (void) octopush:(Octopush *) octopush didFailToRegisterLocationWithError:(NSError *) error;
+
 @end

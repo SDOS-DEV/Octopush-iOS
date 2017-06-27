@@ -67,26 +67,26 @@
 #pragma mark - Octopush Push Notifications Methods
 
 - (void)didUnregisterFromOctopush:(Octopush *)octopush {
-	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Dispositivo desregistrado correctamente" message:nil preferredStyle:UIAlertControllerStyleAlert];
-	[alertController addAction:[UIAlertAction actionWithTitle:@"Cerrar" style:UIAlertActionStyleCancel handler:nil]];
+	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"notification_unregister_correct", nil) message:nil preferredStyle:UIAlertControllerStyleAlert];
+	[alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"comun_cerrar", nil) style:UIAlertActionStyleCancel handler:nil]];
 	[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)octopush:(Octopush *)octopush didFailToUnregisterWithError:(NSError *)error {
-	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Fallo al desregistrar: %@", error.userInfo[NSLocalizedDescriptionKey]] message:nil preferredStyle:UIAlertControllerStyleAlert];
-	[alertController addAction:[UIAlertAction actionWithTitle:@"Cerrar" style:UIAlertActionStyleCancel handler:nil]];
+	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:NSLocalizedString(@"notification_unregister_incorrect", nil), error.userInfo[NSLocalizedDescriptionKey]] message:nil preferredStyle:UIAlertControllerStyleAlert];
+	[alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"comun_cerrar", nil) style:UIAlertActionStyleCancel handler:nil]];
 	[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)octopush:(Octopush *)octopush didFailToRegisterWithError:(NSError *)error {
-	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Fallo en el registro: %@", error.userInfo[NSLocalizedDescriptionKey]] message:nil preferredStyle:UIAlertControllerStyleAlert];
-	[alertController addAction:[UIAlertAction actionWithTitle:@"Cerrar" style:UIAlertActionStyleCancel handler:nil]];
+	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:NSLocalizedString(@"notification_register_incorrect", nil), error.userInfo[NSLocalizedDescriptionKey]] message:nil preferredStyle:UIAlertControllerStyleAlert];
+	[alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"comun_cerrar", nil) style:UIAlertActionStyleCancel handler:nil]];
 	[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)octopush:(Octopush *)octopush didRegisterWithDeviceIdentifier:(NSString *)deviceIdentifier deviceToken:(NSString *)deviceToken {
-	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Registro realizado correctamente" message:nil preferredStyle:UIAlertControllerStyleAlert];
-	[alertController addAction:[UIAlertAction actionWithTitle:@"Cerrar" style:UIAlertActionStyleCancel handler:nil]];
+	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"notification_register_correct", nil) message:nil preferredStyle:UIAlertControllerStyleAlert];
+	[alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"comun_cerrar", nil) style:UIAlertActionStyleCancel handler:nil]];
 	[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
@@ -112,33 +112,13 @@
 - (OctopushAction *)octopush:(Octopush *)octopush willRegisterAction:(NSString *)action {
 	
 	OctopushAction *octopushAction = [OctopushAction initializeWithIdentifier:action];
-	if([action isEqualToString:@"Ir a Sección Cupones"]){
-		//Asignamos las opciones de la notificación
-		octopushAction.actionOptions =  OctopushActionOptionsAuthenticationRequired | OctopushActionOptionsForeground;
-		[octopushAction setActionExecute:^(OctopushAction *octopushAction, OctopushActionCompletion completionAction) {
-			//Asignamos la acción del botón
-			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Titulo"
-															message:@"Accion Tratada"
-														   delegate:nil
-												  cancelButtonTitle:NSLocalizedStringFromTable(@"Aceptar", @"LocalizableOctopush", nil)
-												  otherButtonTitles:nil];
-			[alert show];
-			completionAction(nil, nil);
-			
-		}];
-	}
-	
-	if([action isEqualToString:@"Apuntate al concurso"]){
-		[octopushAction setActionExecute:^(OctopushAction *octopushAction, OctopushActionCompletion completionAction) {
-			
-			UIAlertController *alertController = [UIAlertController alertControllerWithTitle:action message:@"" preferredStyle:UIAlertControllerStyleAlert];
-			UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cerrar" style:UIAlertActionStyleCancel handler:nil];
-			[alertController addAction:cancelAction];
-			
-			completionAction(alertController, nil);
-			
-		}];
-	}
+//	if([action isEqualToString:@"identifier"]){
+//		[octopushAction setActionExecute:^(OctopushAction *octopushAction, OctopushActionCompletion completionAction) {
+//			//Custom Action here
+//			completionAction(nil, nil);
+//			
+//		}];
+//	}
 	
 	return octopushAction;
 }
@@ -157,8 +137,8 @@
 			completionHandler();
 		}];
 	} else {
-		UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"] message:octopushNotification.alert preferredStyle:UIAlertControllerStyleAlert];
-		UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cerrar" style:UIAlertActionStyleCancel handler:nil];
+		UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"comun_accion_no_tratada", nil) message:octopushNotification.alert preferredStyle:UIAlertControllerStyleAlert];
+		UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"comun_cerrar", nil) style:UIAlertActionStyleCancel handler:nil];
 		[alertController addAction:cancelAction];
 		
 		UIViewController *controller = [UIApplication sharedApplication].keyWindow.rootViewController;
@@ -169,6 +149,20 @@
 		
 		completionHandler();
 	}
+}
+
+#pragma mark - Register Location
+
+- (void) didRegisterLocationFromOctopush:(Octopush *) octopush {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"notification_location_correct", nil) message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"comun_cerrar", nil) style:UIAlertActionStyleCancel handler:nil]];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void) octopush:(Octopush *) octopush didFailToRegisterLocationWithError:(NSError *) error {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:NSLocalizedString(@"notification_location_incorrect", nil), error.description] message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"comun_cerrar", nil) style:UIAlertActionStyleCancel handler:nil]];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
 @end

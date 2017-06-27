@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB14317AECD24DAD761A0A6 /* Pods_OctopushExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF329422CC0A0897619D5DA2 /* Pods_OctopushExtension.framework */; };
+		47ECBC00ECD826E213FB38CF /* Pods_Octopush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43441CA081B9073088A20D0 /* Pods_Octopush.framework */; };
 		548D442D1E0BBD0000F0A061 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 548D442C1E0BBD0000F0A061 /* NotificationService.m */; };
 		54EFEC651E290AF700C8985A /* OctopushConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EFEC631E29040F00C8985A /* OctopushConfiguration.m */; };
 		7D257EFD1DE5D952004EF8D4 /* MALoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6B14E1DC7631200D3D697 /* MALoggingViewController.m */; };
 		7D257F0B1DE5D952004EF8D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 290A16A41BFB3146002361EF /* AppDelegate.m */; };
 		7D257F121DE5D952004EF8D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 298FD5BB1C0701E500BA707E /* main.m */; };
-		7D257F1F1DE5D952004EF8D4 /* OctopushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6B1481DC7622A00D3D697 /* OctopushViewController.m */; };
 		7D257F2A1DE5D952004EF8D4 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5B71C0701E500BA707E /* AppIcon.xcassets */; };
 		7D257F2D1DE5D952004EF8D4 /* Launcher.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5BA1C0701E500BA707E /* Launcher.xcassets */; };
 		7D257F2F1DE5D952004EF8D4 /* App.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5BD1C0701E500BA707E /* App.debug.xcconfig */; };
@@ -20,7 +21,24 @@
 		7D257F331DE5D952004EF8D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D6B14A1DC7626C00D3D697 /* Main.storyboard */; };
 		7D257F361DE5D952004EF8D4 /* App.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 298FD5BE1C0701E500BA707E /* App.release.xcconfig */; };
 		B105DFBB1E437F54009613C7 /* Octopush.plist in Resources */ = {isa = PBXBuildFile; fileRef = B105DFBA1E437F54009613C7 /* Octopush.plist */; };
+		B1081D141F012C6800428EE7 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B1081D111F012C6800428EE7 /* Gotham-Bold.otf */; };
+		B1081D151F012C6800428EE7 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = B1081D121F012C6800428EE7 /* Gotham-Book.otf */; };
+		B1081D161F012C6800428EE7 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B1081D131F012C6800428EE7 /* Gotham-Medium.otf */; };
+		B1081D1B1F01318F00428EE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1081D191F01318F00428EE7 /* Localizable.strings */; };
+		B154601A1F02338A005B5189 /* RichNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15460181F02338A005B5189 /* RichNotificationCell.m */; };
+		B154601B1F02338A005B5189 /* RichNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15460191F02338A005B5189 /* RichNotificationCell.xib */; };
+		B154601F1F024BC7005B5189 /* RichNotificationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B154601E1F024BC7005B5189 /* RichNotificationDetailViewController.m */; };
+		B15460231F02554D005B5189 /* OctopushBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15460221F02554D005B5189 /* OctopushBaseViewController.m */; };
+		B154602A1F025D62005B5189 /* UIColor+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B15460261F025D62005B5189 /* UIColor+Base.m */; };
+		B154602B1F025D62005B5189 /* UIColor+OAIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B15460281F025D62005B5189 /* UIColor+OAIAdditions.m */; };
+		B154602E1F025D7E005B5189 /* UIImage+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B154602D1F025D7E005B5189 /* UIImage+Base.m */; };
+		B15460331F026C30005B5189 /* SegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15460311F026C30005B5189 /* SegmentCell.m */; };
+		B15460341F026C30005B5189 /* SegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15460321F026C30005B5189 /* SegmentCell.xib */; };
+		B1AB25551F00FD07007E0816 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1AB25541F00FD07007E0816 /* images.bundle */; };
 		B1C513CD1E2E33AD0073F27F /* OctopushExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 548D44291E0BBCFF00F0A061 /* OctopushExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1CECD751F013B9F0021DD11 /* OctopushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CECD721F013B9F0021DD11 /* OctopushViewController.m */; };
+		B1CECD781F013BB90021DD11 /* OctopushRichNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CECD771F013BB90021DD11 /* OctopushRichNotificationsViewController.m */; };
+		B1CECD7B1F013BC90021DD11 /* OctopushSegmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CECD7A1F013BC90021DD11 /* OctopushSegmentsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0FA9A4AD41D6CFF6AA22986E /* Pods-OctopushExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctopushExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctopushExtension/Pods-OctopushExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		17EFE1856AE679994C7C312D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290A16A31BFB3146002361EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		290A16A41BFB3146002361EF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,7 +86,7 @@
 		298FD5BD1C0701E500BA707E /* App.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = App.debug.xcconfig; sourceTree = "<group>"; };
 		298FD5BE1C0701E500BA707E /* App.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = App.release.xcconfig; sourceTree = "<group>"; };
 		298FD5C01C0701E500BA707E /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
-		298FD6351C0701E500BA707E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4EC4EBF3B0D008D37D06E662 /* Pods-Octopush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Octopush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Octopush/Pods-Octopush.debug.xcconfig"; sourceTree = "<group>"; };
 		542512111E29149C009AEE27 /* OctopushSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OctopushSource.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/OctopushSource-anewlooezvhawrapjcvtsamvmbrh/Build/Products/Debug-iphonesimulator/OctopushSource/OctopushSource.framework"; sourceTree = "<group>"; };
 		548D44291E0BBCFF00F0A061 /* OctopushExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OctopushExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		548D442B1E0BBD0000F0A061 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
@@ -84,14 +103,44 @@
 		7D257EF41DE5D58D004EF8D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7D257F441DE5D952004EF8D4 /* Octopush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octopush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D257F471DE60D94004EF8D4 /* Octopush-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Octopush-Info.plist"; sourceTree = "<group>"; };
+		A43441CA081B9073088A20D0 /* Pods_Octopush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Octopush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B105DFBA1E437F54009613C7 /* Octopush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Octopush.plist; sourceTree = "<group>"; };
+		B1081D0A1F0124E900428EE7 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B1081D111F012C6800428EE7 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		B1081D121F012C6800428EE7 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		B1081D131F012C6800428EE7 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
+		B1081D1A1F01318F00428EE7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B15460171F02338A005B5189 /* RichNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichNotificationCell.h; sourceTree = "<group>"; };
+		B15460181F02338A005B5189 /* RichNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichNotificationCell.m; sourceTree = "<group>"; };
+		B15460191F02338A005B5189 /* RichNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RichNotificationCell.xib; sourceTree = "<group>"; };
+		B154601D1F024BC7005B5189 /* RichNotificationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichNotificationDetailViewController.h; sourceTree = "<group>"; };
+		B154601E1F024BC7005B5189 /* RichNotificationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichNotificationDetailViewController.m; sourceTree = "<group>"; };
+		B15460211F02554D005B5189 /* OctopushBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctopushBaseViewController.h; sourceTree = "<group>"; };
+		B15460221F02554D005B5189 /* OctopushBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctopushBaseViewController.m; sourceTree = "<group>"; };
+		B15460251F025D62005B5189 /* UIColor+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Base.h"; sourceTree = "<group>"; };
+		B15460261F025D62005B5189 /* UIColor+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Base.m"; sourceTree = "<group>"; };
+		B15460271F025D62005B5189 /* UIColor+OAIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+OAIAdditions.h"; sourceTree = "<group>"; };
+		B15460281F025D62005B5189 /* UIColor+OAIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+OAIAdditions.m"; sourceTree = "<group>"; };
+		B154602C1F025D7E005B5189 /* UIImage+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Base.h"; sourceTree = "<group>"; };
+		B154602D1F025D7E005B5189 /* UIImage+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Base.m"; sourceTree = "<group>"; };
+		B15460301F026C30005B5189 /* SegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentCell.h; sourceTree = "<group>"; };
+		B15460311F026C30005B5189 /* SegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentCell.m; sourceTree = "<group>"; };
+		B15460321F026C30005B5189 /* SegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentCell.xib; sourceTree = "<group>"; };
+		B1AB25541F00FD07007E0816 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
 		B1B675E71E2E1FE6006E8C0F /* OctopushDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OctopushDebug.entitlements; sourceTree = "<group>"; };
 		B1B675E81E2E1FE6006E8C0F /* OctopushProduction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OctopushProduction.entitlements; sourceTree = "<group>"; };
-		B1D6B1471DC7622A00D3D697 /* OctopushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctopushViewController.h; sourceTree = "<group>"; };
-		B1D6B1481DC7622A00D3D697 /* OctopushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctopushViewController.m; sourceTree = "<group>"; };
+		B1CECD711F013B9F0021DD11 /* OctopushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctopushViewController.h; sourceTree = "<group>"; };
+		B1CECD721F013B9F0021DD11 /* OctopushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctopushViewController.m; sourceTree = "<group>"; };
+		B1CECD761F013BB90021DD11 /* OctopushRichNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctopushRichNotificationsViewController.h; sourceTree = "<group>"; };
+		B1CECD771F013BB90021DD11 /* OctopushRichNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctopushRichNotificationsViewController.m; sourceTree = "<group>"; };
+		B1CECD791F013BC90021DD11 /* OctopushSegmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctopushSegmentsViewController.h; sourceTree = "<group>"; };
+		B1CECD7A1F013BC90021DD11 /* OctopushSegmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctopushSegmentsViewController.m; sourceTree = "<group>"; };
 		B1D6B14A1DC7626C00D3D697 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B1D6B14D1DC7631200D3D697 /* MALoggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALoggingViewController.h; sourceTree = "<group>"; };
 		B1D6B14E1DC7631200D3D697 /* MALoggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MALoggingViewController.m; sourceTree = "<group>"; };
+		BF42D12A31C6C648C5690CE5 /* Pods-OctopushExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctopushExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctopushExtension/Pods-OctopushExtension.release.xcconfig"; sourceTree = "<group>"; };
+		C808A01C96D84897ECDDEC13 /* Pods-Octopush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Octopush.release.xcconfig"; path = "Pods/Target Support Files/Pods-Octopush/Pods-Octopush.release.xcconfig"; sourceTree = "<group>"; };
+		CF329422CC0A0897619D5DA2 /* Pods_OctopushExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctopushExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB14317AECD24DAD761A0A6 /* Pods_OctopushExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,12 +156,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47ECBC00ECD826E213FB38CF /* Pods_Octopush.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03EFF952292E77F519C91DE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EC4EBF3B0D008D37D06E662 /* Pods-Octopush.debug.xcconfig */,
+				C808A01C96D84897ECDDEC13 /* Pods-Octopush.release.xcconfig */,
+				0FA9A4AD41D6CFF6AA22986E /* Pods-OctopushExtension.debug.xcconfig */,
+				BF42D12A31C6C648C5690CE5 /* Pods-OctopushExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1A3F2B7365F64DEDC650C528 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +186,8 @@
 				7D257EEA1DE5D549004EF8D4 /* UIKit.framework */,
 				7D257E1C1DE5CC05004EF8D4 /* OctopushSource.framework */,
 				17EFE1856AE679994C7C312D /* Pods.framework */,
+				A43441CA081B9073088A20D0 /* Pods_Octopush.framework */,
+				CF329422CC0A0897619D5DA2 /* Pods_OctopushExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,6 +211,7 @@
 				548D442A1E0BBD0000F0A061 /* OctopushExtension */,
 				2970AD761BFA153F007CFBD9 /* Products */,
 				1A3F2B7365F64DEDC650C528 /* Frameworks */,
+				03EFF952292E77F519C91DE9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +251,7 @@
 		298FD5C61C0701E500BA707E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B15460151F023372005B5189 /* Cells */,
 				298FD5C71C0701E500BA707E /* Controllers */,
 				298FD5CD1C0701E500BA707E /* Storyboards */,
 			);
@@ -195,8 +261,11 @@
 		298FD5C71C0701E500BA707E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B1D6B1471DC7622A00D3D697 /* OctopushViewController.h */,
-				B1D6B1481DC7622A00D3D697 /* OctopushViewController.m */,
+				B15460201F025542005B5189 /* Base */,
+				B154601C1F024B93005B5189 /* RichNotificationDetail */,
+				B1CECD701F013B9F0021DD11 /* Dashboard */,
+				B1CECD731F013B9F0021DD11 /* RichNotifications */,
+				B1CECD741F013B9F0021DD11 /* Segments */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -212,8 +281,12 @@
 		298FD6241C0701E500BA707E /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				B1081D101F012C6800428EE7 /* fonts */,
+				B1081D0B1F0125B800428EE7 /* Categories */,
+				B1081D091F0124DE00428EE7 /* Constants */,
+				B1AB254E1F00FCAE007E0816 /* Localization */,
+				B1AB254D1F00FC8F007E0816 /* resources */,
 				298FD6321C0701E500BA707E /* Libs */,
-				298FD6331C0701E500BA707E /* Localization */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -224,14 +297,6 @@
 				B1D6B14C1DC7631200D3D697 /* LogView */,
 			);
 			path = Libs;
-			sourceTree = "<group>";
-		};
-		298FD6331C0701E500BA707E /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				298FD6341C0701E500BA707E /* Localizable.strings */,
-			);
-			path = Localization;
 			sourceTree = "<group>";
 		};
 		548D442A1E0BBD0000F0A061 /* OctopushExtension */ = {
@@ -254,6 +319,116 @@
 			path = Octopush;
 			sourceTree = "<group>";
 		};
+		B1081D091F0124DE00428EE7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B1081D0A1F0124E900428EE7 /* Constants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B1081D0B1F0125B800428EE7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B15460241F025D62005B5189 /* UIColor */,
+				B15460291F025D62005B5189 /* UIImage */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B1081D101F012C6800428EE7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B1081D111F012C6800428EE7 /* Gotham-Bold.otf */,
+				B1081D121F012C6800428EE7 /* Gotham-Book.otf */,
+				B1081D131F012C6800428EE7 /* Gotham-Medium.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		B15460151F023372005B5189 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B154602F1F026C20005B5189 /* Segment */,
+				B15460161F023372005B5189 /* RichNotification */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B15460161F023372005B5189 /* RichNotification */ = {
+			isa = PBXGroup;
+			children = (
+				B15460171F02338A005B5189 /* RichNotificationCell.h */,
+				B15460181F02338A005B5189 /* RichNotificationCell.m */,
+				B15460191F02338A005B5189 /* RichNotificationCell.xib */,
+			);
+			path = RichNotification;
+			sourceTree = "<group>";
+		};
+		B154601C1F024B93005B5189 /* RichNotificationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B154601D1F024BC7005B5189 /* RichNotificationDetailViewController.h */,
+				B154601E1F024BC7005B5189 /* RichNotificationDetailViewController.m */,
+			);
+			path = RichNotificationDetail;
+			sourceTree = "<group>";
+		};
+		B15460201F025542005B5189 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B15460211F02554D005B5189 /* OctopushBaseViewController.h */,
+				B15460221F02554D005B5189 /* OctopushBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B15460241F025D62005B5189 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				B15460251F025D62005B5189 /* UIColor+Base.h */,
+				B15460261F025D62005B5189 /* UIColor+Base.m */,
+				B15460271F025D62005B5189 /* UIColor+OAIAdditions.h */,
+				B15460281F025D62005B5189 /* UIColor+OAIAdditions.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		B15460291F025D62005B5189 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				B154602C1F025D7E005B5189 /* UIImage+Base.h */,
+				B154602D1F025D7E005B5189 /* UIImage+Base.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		B154602F1F026C20005B5189 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				B15460301F026C30005B5189 /* SegmentCell.h */,
+				B15460311F026C30005B5189 /* SegmentCell.m */,
+				B15460321F026C30005B5189 /* SegmentCell.xib */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		B1AB254D1F00FC8F007E0816 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1AB25541F00FD07007E0816 /* images.bundle */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		B1AB254E1F00FCAE007E0816 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				B1081D191F01318F00428EE7 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		B1B675E61E2E1FE6006E8C0F /* Entitlements */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +436,33 @@
 				B1B675E81E2E1FE6006E8C0F /* OctopushProduction.entitlements */,
 			);
 			path = Entitlements;
+			sourceTree = "<group>";
+		};
+		B1CECD701F013B9F0021DD11 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B1CECD711F013B9F0021DD11 /* OctopushViewController.h */,
+				B1CECD721F013B9F0021DD11 /* OctopushViewController.m */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B1CECD731F013B9F0021DD11 /* RichNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				B1CECD761F013BB90021DD11 /* OctopushRichNotificationsViewController.h */,
+				B1CECD771F013BB90021DD11 /* OctopushRichNotificationsViewController.m */,
+			);
+			path = RichNotifications;
+			sourceTree = "<group>";
+		};
+		B1CECD741F013B9F0021DD11 /* Segments */ = {
+			isa = PBXGroup;
+			children = (
+				B1CECD791F013BC90021DD11 /* OctopushSegmentsViewController.h */,
+				B1CECD7A1F013BC90021DD11 /* OctopushSegmentsViewController.m */,
+			);
+			path = Segments;
 			sourceTree = "<group>";
 		};
 		B1D6B14C1DC7631200D3D697 /* LogView */ = {
@@ -279,9 +481,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 548D44351E0BBD0000F0A061 /* Build configuration list for PBXNativeTarget "OctopushExtension" */;
 			buildPhases = (
+				0C9CF1C80F56135AB7CC7DC0 /* [CP] Check Pods Manifest.lock */,
 				548D44251E0BBCFF00F0A061 /* Sources */,
 				548D44261E0BBCFF00F0A061 /* Frameworks */,
 				548D44271E0BBCFF00F0A061 /* Resources */,
+				0B22CF0C878A6C4823EB6B29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,12 +500,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D257F401DE5D952004EF8D4 /* Build configuration list for PBXNativeTarget "Octopush" */;
 			buildPhases = (
+				D6025D298620CAF0DC75871F /* [CP] Check Pods Manifest.lock */,
 				7D257EFC1DE5D952004EF8D4 /* Sources */,
 				7D257F241DE5D952004EF8D4 /* Frameworks */,
 				7D257F271DE5D952004EF8D4 /* Resources */,
 				7D257F3B1DE5D952004EF8D4 /* Warnings */,
 				7D257F3E1DE5D952004EF8D4 /* Embed Frameworks */,
 				B1C513C71E2E33910073F27F /* Embed App Extensions */,
+				04ED87B12F4A7E1DD39BB171 /* [CP] Embed Pods Frameworks */,
+				DDA1F2AF875FAFEA98161764 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,12 +531,12 @@
 				TargetAttributes = {
 					548D44281E0BBCFF00F0A061 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = FR53QH8ZBJ;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = Y5G9RYLF8Y;
+						ProvisioningStyle = Automatic;
 					};
 					7D257EF81DE5D952004EF8D4 = {
-						DevelopmentTeam = FR53QH8ZBJ;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = Y5G9RYLF8Y;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -343,7 +550,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				es,
 			);
@@ -370,10 +576,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B154601B1F02338A005B5189 /* RichNotificationCell.xib in Resources */,
+				B1081D141F012C6800428EE7 /* Gotham-Bold.otf in Resources */,
+				B1081D1B1F01318F00428EE7 /* Localizable.strings in Resources */,
 				7D257F2A1DE5D952004EF8D4 /* AppIcon.xcassets in Resources */,
 				7D257F2D1DE5D952004EF8D4 /* Launcher.xcassets in Resources */,
 				7D257F2F1DE5D952004EF8D4 /* App.debug.xcconfig in Resources */,
 				7D257F321DE5D952004EF8D4 /* Shared.xcconfig in Resources */,
+				B1AB25551F00FD07007E0816 /* images.bundle in Resources */,
+				B1081D161F012C6800428EE7 /* Gotham-Medium.otf in Resources */,
+				B15460341F026C30005B5189 /* SegmentCell.xib in Resources */,
+				B1081D151F012C6800428EE7 /* Gotham-Book.otf in Resources */,
 				7D257F331DE5D952004EF8D4 /* Main.storyboard in Resources */,
 				7D257F361DE5D952004EF8D4 /* App.release.xcconfig in Resources */,
 				B105DFBB1E437F54009613C7 /* Octopush.plist in Resources */,
@@ -383,6 +596,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04ED87B12F4A7E1DD39BB171 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Octopush/Pods-Octopush-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B22CF0C878A6C4823EB6B29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctopushExtension/Pods-OctopushExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C9CF1C80F56135AB7CC7DC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		7D257F3B1DE5D952004EF8D4 /* Warnings */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +654,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}/App\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		D6025D298620CAF0DC75871F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA1F2AF875FAFEA98161764 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Octopush/Pods-Octopush-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -413,10 +701,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D257EFD1DE5D952004EF8D4 /* MALoggingViewController.m in Sources */,
+				B15460231F02554D005B5189 /* OctopushBaseViewController.m in Sources */,
 				7D257F0B1DE5D952004EF8D4 /* AppDelegate.m in Sources */,
+				B154602A1F025D62005B5189 /* UIColor+Base.m in Sources */,
+				B154602E1F025D7E005B5189 /* UIImage+Base.m in Sources */,
+				B1CECD7B1F013BC90021DD11 /* OctopushSegmentsViewController.m in Sources */,
+				B154602B1F025D62005B5189 /* UIColor+OAIAdditions.m in Sources */,
+				B1CECD751F013B9F0021DD11 /* OctopushViewController.m in Sources */,
 				7D257F121DE5D952004EF8D4 /* main.m in Sources */,
+				B15460331F026C30005B5189 /* SegmentCell.m in Sources */,
 				54EFEC651E290AF700C8985A /* OctopushConfiguration.m in Sources */,
-				7D257F1F1DE5D952004EF8D4 /* OctopushViewController.m in Sources */,
+				B154601A1F02338A005B5189 /* RichNotificationCell.m in Sources */,
+				B154601F1F024BC7005B5189 /* RichNotificationDetailViewController.m in Sources */,
+				B1CECD781F013BB90021DD11 /* OctopushRichNotificationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,10 +728,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		298FD6341C0701E500BA707E /* Localizable.strings */ = {
+		B1081D191F01318F00428EE7 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				298FD6351C0701E500BA707E /* es */,
+				B1081D1A1F01318F00428EE7 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -482,7 +779,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -527,7 +824,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -536,6 +833,7 @@
 		};
 		548D44321E0BBD0000F0A061 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA9A4AD41D6CFF6AA22986E /* Pods-OctopushExtension.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -544,20 +842,21 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = FR53QH8ZBJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OctopushExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "$PRODUCT_PACKAGE_NAME_EXTENSION";
+				PRODUCT_BUNDLE_IDENTIFIER = $PRODUCT_PACKAGE_NAME_EXTENSION;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8a89fcc1-fc38-4b06-bfe2-7551d64c7f2e";
-				PROVISIONING_PROFILE_SPECIFIER = Desarrollo;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		548D44331E0BBD0000F0A061 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF42D12A31C6C648C5690CE5 /* Pods-OctopushExtension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -578,10 +877,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -596,10 +895,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "$PRODUCT_PACKAGE_NAME_EXTENSION";
+				PRODUCT_BUNDLE_IDENTIFIER = $PRODUCT_PACKAGE_NAME_EXTENSION;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ad6f008b-69ed-4712-8fdf-e2b71ee266c9";
-				PROVISIONING_PROFILE_SPECIFIER = es.sdos.octopush.test.extension;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
@@ -608,47 +907,49 @@
 		};
 		7D257F411DE5D952004EF8D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC4EBF3B0D008D37D06E662 /* Pods-Octopush.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_ASSETS)";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "$(LAUNCHER_ASSETS)";
 				CODE_SIGN_ENTITLEMENTS = App/Configuration/Entitlements/OctopushDebug.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = FR53QH8ZBJ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = "App/Configuration/Octopush-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_PACKAGE_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1637854d-7061-4f10-955b-767c876fba58";
-				PROVISIONING_PROFILE_SPECIFIER = es.sdos.octopush.dev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		7D257F421DE5D952004EF8D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C808A01C96D84897ECDDEC13 /* Pods-Octopush.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_ASSETS)";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "$(LAUNCHER_ASSETS)";
 				CODE_SIGN_ENTITLEMENTS = App/Configuration/Entitlements/OctopushProduction.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = "App/Configuration/Octopush-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_PACKAGE_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1fb3a210-6635-43d6-868b-5a9569f16029";
-				PROVISIONING_PROFILE_SPECIFIER = es.sdos.octopush.test;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

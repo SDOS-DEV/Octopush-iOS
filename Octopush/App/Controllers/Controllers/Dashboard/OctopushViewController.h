@@ -9,11 +9,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "OctopushBaseViewController.h"
 
-@interface OctopushViewController : UIViewController
-
-@property (nonatomic, weak) IBOutlet UITextField *tfIdMensaje1;
-@property (nonatomic, weak) IBOutlet UITextField *tfIdMensaje2;
-@property (nonatomic, weak) IBOutlet UISwitch *sw;
+@interface OctopushViewController : OctopushBaseViewController
 
 @end
